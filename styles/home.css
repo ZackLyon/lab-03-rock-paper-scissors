@@ -28,3 +28,42 @@ section > div {
     flex-direction: column;
     align-items: center;
 }
+
+img {
+    border-radius: 10%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    display: none;
+}
+
+input:checked + img {
+    border: 5px solid black;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    position: relative;
+    top: 30px;
+    background-color: rgb(255, 235, 43);
+    border-radius: 6px;
+    border: none;
+    height: 30px;
+    font-size: 1.1rem;
+}
+
+.outcome-display {
+    font-size: 8rem;
+}
+
+.options-display {
+    background-color: black;
+}

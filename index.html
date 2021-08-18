@@ -15,23 +15,28 @@
 <body>
     <main>
         <section class="options-display">
-            <label>
-                <img src="" alt="Rock">
+            <label >
+                <input type="radio" name="selection" value="rock">
+                <img src="./assets/rock-pic.png" alt="Rock">
             </label>
             <label>
-                <img src="" alt="Paper">
+                <input type="radio" name="selection" value="paper">
+                <img src="./assets/paper-pic.png" alt="Paper">
+                <button id="sub-btn">GO!</button>
             </label>
             <label>
-                <img src="" alt="Scissors">
+                <input type="radio" name="selection" value="scissors">
+                <img src="./assets/scissors-pic.png" alt="Scissors">
             </label>
+            
         </section>
-        <section class="choices-display">
-            <div id="user-choice">
-                <img src="" alt="user chose">
+        <section class="choices-display hidden">
+            <div>
+                <img src="" alt="user chose" id="user-choice">
                 <div>You picked</div>
             </div>
-            <div id="robot-choice">
-                <img src="" alt="robot chose">
+            <div>
+                <img src="" alt="robot chose" id="robot-choice">
                 <div>Robot picked</div>
             </div>
         </section>

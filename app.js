@@ -1,8 +1,20 @@
-// import functions and grab DOM elements
+import { getRandomThrow, doesUserWin, displayOutcome} from './utils.js';
+//doesUserWin(player, computer);
 
-// initialize global state
+const subButton = document.querySelector('#sub-btn');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+subButton.addEventListener('click', () => {
+    let robotPicked = getRandomThrow();
+    console.log('robot: ' + robotPicked); // *****DELETE THIS AT END
+    let playerPicked = document.querySelector('input:checked').value;
+ 
+    let playerFate = doesUserWin(playerPicked, robotPicked);
+    displayOutcome(playerFate);
+});
+
+// function incrementFate(currentFate) {
+//   if(currentFate === 'win') {
+
+//   }
+// }
