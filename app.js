@@ -1,4 +1,4 @@
-import { getRandomThrow, doesUserWin, displayOutcome, displayTotals } from './utils.js';
+import { getRandomThrow, doesUserWin, displayOutcome, displayTotals, displayChoices } from './utils.js';
 //doesUserWin(player, computer);
 
 const subButton = document.querySelector('#sub-btn');
@@ -11,7 +11,7 @@ subButton.addEventListener('click', () => {
     let robotPicked = getRandomThrow();
     console.log('robot: ' + robotPicked); // *****DELETE THIS AT END
     let playerPicked = document.querySelector('input:checked').value;
- 
+    displayChoices(playerPicked, robotPicked);
     let playerFate = doesUserWin(playerPicked, robotPicked);
     displayOutcome(playerFate);
     incrementFate(playerFate);

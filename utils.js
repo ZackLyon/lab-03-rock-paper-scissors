@@ -1,9 +1,12 @@
-export { getRandomThrow, doesUserWin, displayOutcome, displayTotals };
+export { getRandomThrow, doesUserWin, displayOutcome, displayTotals, displayChoices };
 
 const outcomeEl = document.querySelector('#outcome');
 const victoriesEl = document.querySelector('#victories');
 const defeatsEl = document.querySelector('#defeats');
 const drawsEl = document.querySelector('#draws');
+const userChoice = document.querySelector('#user-choice');
+const robotChoice = document.querySelector('#robot-choice');
+const choicesDisplay = document.querySelector('.choices-display');
 
 const choiceArr = ['rock', 'paper', 'scissors'];
 
@@ -39,4 +42,10 @@ function displayTotals(win, lose, draw) {
     victoriesEl.textContent = win;
     defeatsEl.textContent = lose;
     drawsEl.textContent = draw;
+}
+
+function displayChoices(person, machine) {
+    userChoice.src = `./assets/${person}-pic.png`;
+    robotChoice.src = `./assets/${machine}-pic.png`;
+    choicesDisplay.classList.remove('hidden');
 }
