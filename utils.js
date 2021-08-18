@@ -1,6 +1,9 @@
-export { getRandomThrow, doesUserWin, displayOutcome };
+export { getRandomThrow, doesUserWin, displayOutcome, displayTotals };
 
 const outcomeEl = document.querySelector('#outcome');
+const victoriesEl = document.querySelector('#victories');
+const defeatsEl = document.querySelector('#defeats');
+const drawsEl = document.querySelector('#draws');
 
 const choiceArr = ['rock', 'paper', 'scissors'];
 
@@ -30,4 +33,10 @@ function doesUserWin(player, computer) {
 
 function displayOutcome(winLoseDraw) {
     outcomeEl.textContent = `You ${winLoseDraw}!`;
+}
+
+function displayTotals(win, lose, draw) {
+    victoriesEl.textContent = win;
+    defeatsEl.textContent = lose;
+    drawsEl.textContent = draw;
 }
