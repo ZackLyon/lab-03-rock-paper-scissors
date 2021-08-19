@@ -15,7 +15,8 @@ main {
     font-size: 2rem;
     height: 100%;
     display: grid;
-    grid-template-rows: 2fr 2fr 1fr 1fr;
+    grid-template-rows: 15fr 1fr 10fr 7fr 7fr;
+    /* grid-template-rows: 2fr 2fr 1fr 1fr; */
 }
 
 section {
@@ -53,11 +54,12 @@ input:checked + img {
 
 button {
     position: relative;
-    top: 30px;
+    top: -3em;
     background-color: rgb(255, 235, 43);
-    border-radius: 6px;
+    border-radius: 12px;
     border: none;
-    height: 30px;
+    height: 2em;
+    width: 14em;
     font-size: 1.1rem;
 }
 
@@ -68,3 +70,4 @@ button {
 .options-display {
     background-color: black;
 }
+
