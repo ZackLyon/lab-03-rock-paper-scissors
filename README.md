@@ -9,3 +9,27 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+## HTML Setup
+1) 3 radio `<inputs>` w/ name and value attributes inside `<labels>`
+1) submit button
+2) 2 injection sites for user and computer choices
+1) 1 large injection site for win/loss message
+1) 3 injection sites for running total of wins, losses and draws
+1) Stretch: reset button
+1) Stretch: injection site for running total resets
+
+## States
+1) total wins
+2) total losses
+3) total draws
+1) Stretch: total resets
+
+## Functions
+1) getRandomThrow : output rock, paper or scissors
+2) doesUserWin :
+    - parameters: player, computer
+    - output: win, lose, draw
+3) display current win/lose
+4) display user/computer picked
+5) display total wins/losses/draws
+6) Stretch: reset

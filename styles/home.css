@@ -1,1 +1,91 @@
 /* add home page styles here */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Anton', sans-serif;
+}
+main {
+    font-size: 2rem;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15fr 1fr 10fr 7fr 7fr;
+    /* grid-template-rows: 2fr 2fr 1fr 1fr; */
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    border-radius: 10%;
+    transition: all 0.1s ease-in-out;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    display: none;
+}
+
+input:checked + img {
+    border: 10px solid white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    position: relative;
+    top: -3em;
+    background-color: rgb(255, 235, 43);
+    border-radius: 12px;
+    border: none;
+    height: 2em;
+    width: 14em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.outcome-display {
+    font-size: 8rem;
+}
+
+.options-display, .btn-display {
+    background-color: black;
+}
+
+.total-display {
+    background-color: black;
+    color: rgb(255, 235, 43);
+}
+
+#sub-btn {
+    left: 7em;
+}
+
+#reset-btn {
+    right: 7em;
+}
