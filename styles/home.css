@@ -1,4 +1,6 @@
 /* add home page styles here */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ body, html {
     bottom: 0;
     left: 0;
     right: 0;
+    font-family: 'Anton', sans-serif;
 }
 main {
     font-size: 2rem;
@@ -62,6 +65,8 @@ button {
     height: 2em;
     width: 14em;
     font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .outcome-display {
@@ -70,6 +75,11 @@ button {
 
 .options-display, .btn-display {
     background-color: black;
+}
+
+.total-display {
+    background-color: black;
+    color: rgb(255, 235, 43);
 }
 
 #sub-btn {

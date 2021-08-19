@@ -7,6 +7,7 @@ const drawsEl = document.querySelector('#draws');
 const userChoice = document.querySelector('#user-choice');
 const robotChoice = document.querySelector('#robot-choice');
 const choicesDisplay = document.querySelector('.choices-display');
+const resetEl = document.querySelector('#resets');
 
 const choiceArr = ['rock', 'paper', 'scissors'];
 
@@ -38,10 +39,11 @@ function displayOutcome(winLoseDraw) {
     outcomeEl.textContent = `You ${winLoseDraw}!`;
 }
 
-function displayTotals(win, lose, draw) {
+function displayTotals(win, lose, draw, resetCount) {
     victoriesEl.textContent = win;
     defeatsEl.textContent = lose;
     drawsEl.textContent = draw;
+    resetEl.textContent = resetCount;
 }
 
 function displayChoices(person, machine) {
@@ -52,5 +54,5 @@ function displayChoices(person, machine) {
 
 function resetView() {
     choicesDisplay.classList.add('hidden');
-    outcomeEl.textContent = 'Victory or Defeat?';
+    outcomeEl.textContent = 'Roshambo';
 }
