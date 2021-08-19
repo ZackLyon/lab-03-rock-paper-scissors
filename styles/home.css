@@ -33,6 +33,7 @@ section > div {
 
 img {
     border-radius: 10%;
+    transition: all 0.1s ease-in-out;
 }
 
 label {
@@ -67,7 +68,14 @@ button {
     font-size: 8rem;
 }
 
-.options-display {
+.options-display, .btn-display {
     background-color: black;
 }
 
+#sub-btn {
+    left: 7em;
+}
+
+#reset-btn {
+    right: 7em;
+}

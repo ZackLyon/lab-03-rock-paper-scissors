@@ -1,4 +1,4 @@
-export { getRandomThrow, doesUserWin, displayOutcome, displayTotals, displayChoices };
+export { getRandomThrow, doesUserWin, displayOutcome, displayTotals, displayChoices, resetView };
 
 const outcomeEl = document.querySelector('#outcome');
 const victoriesEl = document.querySelector('#victories');
@@ -48,4 +48,9 @@ function displayChoices(person, machine) {
     userChoice.src = `./assets/${person}-pic.png`;
     robotChoice.src = `./assets/${machine}-pic.png`;
     choicesDisplay.classList.remove('hidden');
+}
+
+function resetView() {
+    choicesDisplay.classList.add('hidden');
+    outcomeEl.textContent = 'Victory or Defeat?';
 }

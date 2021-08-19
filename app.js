@@ -1,7 +1,8 @@
-import { getRandomThrow, doesUserWin, displayOutcome, displayTotals, displayChoices } from './utils.js';
+import { getRandomThrow, doesUserWin, displayOutcome, displayTotals, displayChoices, resetView } from './utils.js';
 //doesUserWin(player, computer);
 
 const subButton = document.querySelector('#sub-btn');
+const resetButton = document.querySelector('#reset-btn');
 
 let victories = 0;
 let defeats = 0;
@@ -17,6 +18,15 @@ subButton.addEventListener('click', () => {
     incrementFate(playerFate);
     displayTotals(victories, defeats, draws);
 });
+
+resetButton.addEventListener('click', () => {
+    victories = 0;
+    defeats = 0;
+    draws = 0;
+    displayTotals(victories, defeats, draws);
+    resetView();
+});
+
 
 function incrementFate(currentFate) {
     if (currentFate === 'win') {
