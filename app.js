@@ -11,7 +11,6 @@ let reset = 0;
 
 subButton.addEventListener('click', () => {
     let robotPicked = getRandomThrow();
-    console.log('robot: ' + robotPicked); // *****DELETE THIS AT END
     let playerPicked = document.querySelector('input:checked').value;
     displayChoices(playerPicked, robotPicked);
     let playerFate = doesUserWin(playerPicked, robotPicked);
@@ -28,7 +27,6 @@ resetButton.addEventListener('click', () => {
     displayTotals(victories, defeats, draws, reset);
     resetView();
 });
-
 
 function incrementFate(currentFate) {
     if (currentFate === 'win') {
