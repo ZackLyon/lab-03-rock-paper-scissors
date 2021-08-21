@@ -17,7 +17,6 @@ main {
     height: 100%;
     display: grid;
     grid-template-rows: 15fr 1fr 10fr 7fr 7fr;
-    /* grid-template-rows: 2fr 2fr 1fr 1fr; */
 }
 
 section {
@@ -88,6 +87,37 @@ button {
     right: 7em;
 }
 
+/* for ipad */
+@media only screen and (max-width: 1040px) {
+
+    main {
+        display: grid;
+        grid-template-rows: 12fr 1fr 9fr 7fr 7fr;
+    }
+
+    img {
+        width: 6em;
+        height: auto;
+    }
+
+    button {
+        position: relative;
+        top: -2em;
+        height: 2em;
+        width: 8em;
+        font-size: 1.1rem;
+    }
+
+    #sub-btn {
+        left: 3em;
+    }
+    
+    #reset-btn {
+        right: 3em;
+    }
+
+} 
+
 /* for phone */
 @media only screen and (max-width: 600px) {
 
@@ -128,35 +158,6 @@ button {
     .total-display {
         font-size: 1.4rem;
     }
-
 } 
 
-@media only screen and (max-width: 1040px) {
 
-    main {
-        display: grid;
-        grid-template-rows: 12fr 1fr 9fr 7fr 7fr;
-    }
-
-    img {
-        width: 6em;
-        height: auto;
-    }
-
-    button {
-        position: relative;
-        top: -2em;
-        height: 2em;
-        width: 8em;
-        font-size: 1.1rem;
-    }
-
-    #sub-btn {
-        left: 3em;
-    }
-    
-    #reset-btn {
-        right: 3em;
-    }
-
-} 
