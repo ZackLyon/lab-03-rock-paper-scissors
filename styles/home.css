@@ -109,15 +109,24 @@ section    {
 }
 
 
-
-img{
-
-
+button{
+    width:9em;
 }
 
 label{
     max-width: 4em;
-
 }
 
-} */
+#sub-btn {
+    left: 1em;
+}
+
+#reset-btn {
+    right: 1em;
+}
+
+.total-display > div{
+font-size:.85em;
+}
+
+}
